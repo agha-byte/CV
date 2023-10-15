@@ -1,0 +1,146 @@
+#body {
+    background-color: whitesmoke;
+    margin: 0px
+}
+.top > img {
+    height: 200px;
+    width: 220px;
+    object-fit: cover;
+    float: left;
+}
+.top {
+    background-color: #8d4b55;
+    height: 200px;
+}
+.top > h1, p[id="top"] {
+    
+   
+    margin: 0px 0px 0px 860px;
+}
+.top p, h1 {
+    position: relative;
+        top: 50px;
+  
+}
+/*Left container*/
+
+/***************My Contacts********************/
+.my-contact{
+    width: 200px;
+    margin: 50px 0px 0px 30px;
+}
+.my-contact > h2, hr {
+    margin-bottom: 10px;
+}
+
+.left .contact { /*these combination of selectors
+    select all tags with contact class and give them 
+    these properties*/
+    width: 22px;
+    height: 15px;
+    float: left;
+}
+.my-contact .subdiv > p { /*margin between p tags
+    since they had some by default*/
+    margin: 5px 0px 5px 0px;
+}
+/**************Hard Skills******************/
+.hard-skills, .soft-skills, .edu-bg {/* Targeting multiple divs to 
+    avoid code repetition*/
+    width: 200px;
+    margin: 20px 0px 0px 30px; 
+}
+.hard-skills > h2, hr {
+    margin-bottom: 10px;
+
+}
+/* .lists class gives padding to all bullet points*/
+  .lists {
+    padding-left: 25px;
+}
+/*****************Soft Skills******************/
+.soft-skills > h2, hr {
+    margin-bottom: 10px;
+
+}
+/**************edu bg*/
+.edu-bg > h2, hr {
+    margin-bottom: 10px;
+
+}
+.left .nested-ul {
+    padding-left: 25px;
+}
+.left, .right{
+    text-align: justify;
+}
+/*****************Right Container*************/
+.left {
+    float: left
+}
+.right {
+    float: right;
+}
+/*About me*/
+.right {
+    width: 200px;
+    margin-right: 200px;
+    
+}
+.About-me {
+    margin-top: 50px;
+}
+.About-me > h2, hr {
+    margin-bottom: 10px;
+}
+/******Professional Experience******/
+
+/************Projects***********/
+.projects > h2,hr {
+    margin-bottom: 10px;
+}
+/************Extra currcicullar***********/
+.extra-curr > h2,hr {
+    margin-bottom: 10px;
+}
+/*********Giving color to h1, h2 and hr tags*/
+.top > h1, p[id="top"] {
+    color: whitesmoke;
+}
+h2 {
+    color:#942637;
+    font-weight: 800;
+}
+hr {
+    border: 0.5px solid #942637;
+}
+
+/*******adding media queries to display website 
+from 340px to 640px*/
+@media (min-width: 640px) and (max-width: 1100px) {
+    .top > h1, p[id="top"] {
+        right: 350px;
+    }
+}
+@media (min-width: 340px) and (max-width: 640px) {
+    html {
+        width: 700px;
+    }
+    .top {
+        width: 100%;
+    }
+    .top > p {
+        
+        right: 580px;
+        font-size: 17pt;
+        width: 300px;
+    }
+   
+    .top > h1 {
+        right: 550px;
+        width: 300px;
+    }
+    .right {
+        margin-right: 120px;
+    }
+}
